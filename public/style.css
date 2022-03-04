@@ -1,0 +1,157 @@
+.normal-filter{
+    filter: url("filters.svg#filter-id");
+}
+
+.grayscale_filter{
+    -webkit-filter: saturate(0.03);
+    filter: grayscale(60%);
+}
+
+.sepiascale_filter{
+    filter: sepia(60%);
+}
+
+.blurscale_filter{
+    filter: blur(3px);
+}
+
+.brightnessscale_filter{
+    filter: brightness(1.75);
+}
+
+.contrastscale_filter{
+    filter: contrast(1.75);
+}
+
+.hue-rotate-scale_filter{
+    filter: hue-rotate(90deg);
+}
+
+.hue-rotate2-scale_filter{
+    filter: hue-rotate(-0.25turn);
+}
+
+.hue-rotate3-scale_filter{
+    filter: hue-rotate(3.142rad);
+}
+
+.saturate-scale_filter{
+    filter: saturate(4);
+}
+
+.invert-scale_filter{
+    filter: invert(0.30);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#videoTag{
+    width: 100%;
+    height: 99vh;
+}
+
+
+#takeProfileImage{
+    z-index: 10;
+    bottom: 3%;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(117, 116, 116);
+    border-radius: 100%;
+    cursor: pointer;
+    margin-top: -12vh;
+    margin-left: 10px;
+}
+
+#chageImageFilter{
+    z-index: 10;
+    bottom: 3%;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(117, 116, 116);
+    border-radius: 100%;
+    cursor: pointer;
+    margin-top: -12vh;
+    margin-left: 10px;
+}
+
+#toBight{
+    z-index: 10;
+    bottom: 3%;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient( to top, black, white);
+    border-radius: 100%;
+    cursor: pointer;
+    margin-top: -12vh;
+    margin-left: 10px;
+}
+
+#toDark{
+    z-index: 10;
+    bottom: 3%;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient( to top, white, black);
+    border-radius: 100%;
+    cursor: pointer;
+    margin-top: -12vh;
+    margin-left: 10px;
+}
+
+/* left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); */
+
+#functions{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#takeProfileImage:hover{
+    background-color: rgb(88, 87, 87);
+}
+
+#finalImage{
+    position: absolute;
+    z-index: 10;
+    left: 2%;
+    top: 2%;
+    width: 20vw;
+    height: 20vw;
+    display: none;
+    cursor: pointer;
+}
+
+#profilePictureOutput{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+
+#filterSection{
+    width: 100%;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10vh;
+    padding-bottom: 2vh;
+}
+
+.colorChange{
+    z-index: 10;
+    bottom: 3%;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(117, 116, 116);
+    border-radius: 100%;
+    cursor: pointer;
+    margin-left: 5px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WebRtc</title>
+</head>
+<body>
+    <div style="width: 100%;background: #abcdef;height:max-content;">
+        <video autoplay id="videoTag"  ></video>
+
+       <div id="functionCollection">
+            <div id="functions"> 
+                <div onClick="increaseBight()" id="toBight"  type="button"></div>
+                <div onClick="decreaseBrightness()" id="toDark"  type="button"></div>
+                <div id="takeProfileImage" autofocus="true" type="button"></div>
+                <div onClick="shaowAllColor()"  id="chageImageFilter" autofocus="true" type="button">
+                    <img src="term.jpg" class="normal-filter" style="width: 100%;height: 100%;border-radius: 100%;" alt="">
+                </div>
+            </div>
+       </div>
+
+        <div style="width: 100%;" id="allColorCollection">
+            <div id="filterSection">
+                <div onClick="chageColor('normal-filter')" class="colorChange">
+                    <img src="term.jpg" class="normal-filter" style="width: 100%;height: 100%;border-radius: 100%;" alt="">
+                </div>
+                <div onClick="chageColor('grayscale_filter')" class="colorChange">
+                    <img src="term.jpg" class="grayscale_filter" style="width: 100%;height: 100%;border-radius: 100%;" alt="">
+                </div>
+                <div onClick="chageColor('sepiascale_filter')"  class="colorChange" >
+                    <img src="term.jpg" class="sepiascale_filter" style="width: 100%;height: 100%;border-radius: 100%;" alt="">
+                </div>
+                <div onClick="chageColor('blurscale_filter')"  class="colorChange" >
+                    <img src="term.jpg" class="blurscale_filter" style="width: 100%;height: 100%;border-radius: 100%;" alt="">
+                </div>
+                <div onClick="chageColor('brightnessscale_filter')"  class="colorChange" >
+                    <img src="term.jpg" class="brightnessscale_filter" style="width: 100%;height: 100%;border-radius: 100%;" alt="">
+                </div>
+                <div onClick="chageColor('contrastscale_filter')"  class="colorChange" >
+                    <img src="term.jpg" class="contrastscale_filter" style="width: 100%;height: 100%;border-radius: 100%;" alt="">
+                </div>
+                <div onClick="chageColor('hue-rotate-scale_filter')"  class="colorChange" >
+                    <img src="term.jpg" class="hue-rotate-scale_filter" style="width: 100%;height: 100%;border-radius: 100%;" alt="">
+                </div>
+                <div onClick="chageColor('hue-rotate2-scale_filter')"  class="colorChange" >
+                    <img src="term.jpg" class="hue-rotate2-scale_filter" style="width: 100%;height: 100%;border-radius: 100%;" alt="">
+                </div>
+                <div onClick="chageColor('hue-rotate3-scale_filter')"  class="colorChange" >
+                    <img src="term.jpg" class="hue-rotate3-scale_filter" style="width: 100%;height: 100%;border-radius: 100%;" alt="">
+                </div>
+                <div onClick="chageColor('saturate-scale_filter')"  class="colorChange" >
+                    <img src="term.jpg" class="aturate-scale_filter" style="width: 100%;height: 100%;border-radius: 100%;" alt="">
+                </div>
+                <div onClick="chageColor('invert-scale_filter')"  class="colorChange" >
+                    <img src="term.jpg" class="invert-scale_filter" style="width: 100%;height: 100%;border-radius: 100%;" alt="">
+                </div>
+                <div onClick="hideAllColor()"  class="colorChange" >
+                </div>
+            </div>
+        </div>
+
+        <canvas id="pictureProfileCanvas" style="display: none;"></canvas>
+    
+        <div id="finalImage">
+            <img id="profilePictureOutput" alt="">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
